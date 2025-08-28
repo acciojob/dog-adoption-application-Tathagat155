@@ -4,21 +4,31 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		form{
+			background-color:yellow;
+			color:black;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
 	<form>
 		<input type="text" id="name" name="name" placeholder="Name">
-		<input type="text" id="phone" name="number" placeholder="Number">
+		<input type="text" id="phone" name="number" placeholder="Phone Number">
 		<input type="text" id="address" name="address" placeholder="Address">
-	    <input type="checkbox" id="checkbox" name="answer">	Have you ever lived with a Dog before?
-	    <select name="dog-breeds" id="multiSelect">
+	    <input type="checkbox" id="checkbox" name="answer" value="Have you ever lived with a Dog before?">	Have you ever lived with a Dog before?
+	    <select name="dog-breeds" id="multiSelect" multiple>
 			<option value="bullDog">Bull dog</option>
 			<option value="GermanShepherd">German Shepherd</option>
 			<option value="wildDog">Wild dog</option>
 		</select>
-		<button type="submit" id="submit" name="submit">Submit</button>
+		<input type="submit" id="submit" name="submit">
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
