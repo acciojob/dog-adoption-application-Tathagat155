@@ -5,13 +5,29 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
-		*{
-			margin:0;
-			padding:0;
+		body {
+			font-family: Arial, sans-serif;
+			background: #f9f9f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 		}
-		form{
-			background-color:yellow;
-			color:black;
+		form {
+			background: #fff;
+			padding: 20px 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			width: 350px;
+		}
+	
+		input, select {
+			width: 100%;
+			padding: 8px;
+			margin-top: 5px;
+			margin-bottom: 12px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
 		}
 	</style>
 </head>
@@ -20,15 +36,19 @@
 	<!-- the entire body must be written by student -->
 	<form>
 		<input type="text" id="name" name="name" placeholder="Name">
-		<input type="text" id="phone" name="number" placeholder="Phone Number">
+		<br>
+		<input type="text" id="phone" name="phone" placeholder="Phone Number">
+		<br>
 		<input type="text" id="address" name="address" placeholder="Address">
-	    <input type="checkbox" id="checkbox" name="answer" value="Have you ever lived with a Dog before?">	Have you ever lived with a Dog before?
-	    <select name="dog-breeds" id="multiSelect" multiple>
+		<br>
+	   <label for="checkbox"><input type="checkbox" id="checkbox" name="answer" value="Have you ever lived with a Dog before?">Have you ever lived with a Dog before?</label>
+	  <br>
+		<select name="dog-breeds" id="multiSelect" multiple>
 			<option value="bullDog">Bull dog</option>
 			<option value="GermanShepherd">German Shepherd</option>
 			<option value="wildDog">Wild dog</option>
-		</select>
-		<input type="submit" id="submit" name="submit">
+		</select><br>
+		<input type="submit" id="submit" name="submit" value="submit">
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
